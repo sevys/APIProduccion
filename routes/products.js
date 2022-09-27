@@ -1,5 +1,5 @@
 var express = require("express")
-const productService = require("../../webserver/controllers/productService")
+const productService = require("../controllers/productService")
 var router = express.Router();
 
 router.post("/", productService.insertProduct);
