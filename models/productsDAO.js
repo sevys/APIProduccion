@@ -1,4 +1,4 @@
-const db = require("../../webserver/configMysql")
+const db = require("../configMysql")
 
 
 module.exports = {
