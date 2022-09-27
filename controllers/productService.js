@@ -1,4 +1,4 @@
-const productDao = require("../../webserver/models/productsDAO")
+const productDao = require("../models/productsDAO")
 
 const insertProduct = (req, res) => {
     const product ={
