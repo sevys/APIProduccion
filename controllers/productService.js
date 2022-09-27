@@ -1,13 +1,12 @@
-const productDao = require("../models/productsDAO")
+const productDao = require("../../webserver/models/productsDAO")
 
 const insertProduct = (req, res) => {
     const product ={
         name: req.body.name,
         price: req.body.price,
-        type: req.body.type
     }
 
-    productDao.insetProduct(product, (data) => {
+    productDao.insertUsers(product, (data) => {
         res.send({
             status: true,
             message: "The Product is added correctly"
@@ -21,7 +20,7 @@ const insertProduct = (req, res) => {
 }
 
 const consultProduct = (req, res) => {
-    productDao.consultProduct((data) =>{
+    productDao.consultUsers((data) =>{
         if (data != null){
             res.send({
                 status: true,
@@ -37,7 +36,7 @@ const consultProduct = (req, res) => {
 }
 
 const deleteProduct = (req, res) => {
-    productDao.deleteProduct(req.params.id, (data) => {
+    productDao.deleteUsers(req.params.id, (data) => {
         res.send({
             status: true,
             message: "Was deleted correctly" + req.params.id
@@ -55,10 +54,9 @@ const updateProduct = (req, res) => {
         id: req.params.id,
         name: req.body.name,
         price: req.body.price,
-        type: req.body.type
     }
 
-    productDao.updateProduct(product, (data) => {
+    productDao.updateUsers(product, (data) => {
         res.send({
             status: true,
             message: "Was updated correctly"

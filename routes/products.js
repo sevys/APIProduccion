@@ -1,13 +1,13 @@
 var express = require("express")
-const productService = require("../controllers/productService")
+const productService = require("../../webserver/controllers/productService")
 var router = express.Router();
 
-router.post("/registerProduct", productService.insertProduct);
+router.post("/", productService.insertProduct);
 
-router.post("/updateProduct/:id", productService.updateProduct);
+router.post("/:id", productService.updateProduct);
 
-router.post("/deleteProduct/:id", productService.deleteProduct);
+router.post("/:id", productService.deleteProduct);
 
-router.get("/consultProduct", productService.consultProduct);
+router.get("/", productService.consultProduct);
 
 module.exports = router;

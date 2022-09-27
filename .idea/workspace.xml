@@ -31,29 +31,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2EPcxAaMBOvYj7pgMZECUzDBLTU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/Documentos/6to Cuatrimestre/Estancia I/EcommerceFront" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Uziel\OneDrive\Documentos\1.- Arquitectura Orientada a Servicios\Crud" />
       <recent name="C:\Users\Uziel\OneDrive\Documentos\1.- Arquitectura Orientada a Servicios\Crud\bin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SEVYS\WebstormProjects\webserver" />
+      <recent name="C:\Users\SEVYS\WebstormProjects\webserver\routes" />
+      <recent name="C:\Users\SEVYS\WebstormProjects\webserver\models" />
+      <recent name="C:\Users\SEVYS\WebstormProjects\webserver\controllers" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -99,6 +104,7 @@
       <workItem from="1662657175342" duration="2274000" />
       <workItem from="1663110953241" duration="207000" />
       <workItem from="1663687265454" duration="1114000" />
+      <workItem from="1664287103281" duration="777000" />
     </task>
     <servers />
   </component>

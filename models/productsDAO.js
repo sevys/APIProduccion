@@ -1,18 +1,18 @@
-const db = require("../configMysql")
+const db = require("../../webserver/configMysql")
 
 
 module.exports = {
 
-    insetProduct: (product, callback) => {
-        let sql = 'INSERT INTO product SET ?'
-        db.query(sql, product, (err, data) => {
+    insertUsers: (user, callback) => {
+        let sql = 'INSERT INTO users SET ?'
+        db.query(sql, user, (err, data) => {
             if (err) throw err;
             return callback(data);
         })
     },
 
-    deleteProduct: (id, callback) => {
-        let sql = 'DELETE FROM product WHERE id = ?';
+    deleteUsers: (id, callback) => {
+        let sql = 'DELETE FROM users WHERE id = ?';
 
         db.query(sql, id, (err, data) =>{
             if (err) throw err;
@@ -20,16 +20,16 @@ module.exports = {
         })
     },
 
-    updateProduct: (product, callback) => {
-        let sql = 'UPDATE product SET name = ?, price = ?, type = ? WHERE id = ?';
-        db.query(sql, [product.name, product.price, product.type, product.id], (err, data) => {
+    updateUsers: (product, callback) => {
+        let sql = 'UPDATE users SET name = ?, email = ? WHERE id = ?';
+        db.query(sql, [product.name, product.price, product.id], (err, data) => {
             if (err) throw err;
             return callback(data);
         })
     },
 
-    consultProduct: (callback) => {
-        let sql = 'SELECT * FROM product';
+    consultUsers: (callback) => {
+        let sql = 'SELECT * FROM users';
 
         db.query(sql, (err, data) =>{
             if (err) throw err;
